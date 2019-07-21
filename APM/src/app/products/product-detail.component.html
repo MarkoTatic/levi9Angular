@@ -1,0 +1,14 @@
+<!-- <div class="card">
+  <div class="card-header">
+     {{pageTitle + ': ' + product.productName}} moguce da ce se izvrisiti pre nego sto se ucita 
+    {{pageTitle + ': ' + product?.productName}}
+  </div>
+</div> -->
+
+
+<div class="card" *ngIf='product'>
+  <div class="card-header">
+    <!-- {{pageTitle + ': ' + product.productName}} moguce da ce se izvrisiti pre nego sto se ucita -->
+    {{pageTitle + ': ' + product.productName}}
+  </div>
+</div>
