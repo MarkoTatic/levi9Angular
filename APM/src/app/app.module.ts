@@ -15,21 +15,21 @@ import { ProductDetailGuard } from './products/product-detail.guard';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent,
-    ConvertToSpacesPipe,
-    StarComponent,
-    ProductDetailComponent,
+    // ProductListComponent,
+    // ConvertToSpacesPipe,
+    // StarComponent,
+    // ProductDetailComponent,
     WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    // FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'products', component: ProductListComponent},
-      { path: 'products/:id', canActivate: [ ProductDetailGuard],
+      // { path: 'products', component: ProductListComponent},
+      // { path: 'products/:id', canActivate: [ ProductDetailGuard],
       
-      component: ProductDetailComponent },
+      // component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
