@@ -4,7 +4,7 @@ import { ProductService } from './product.service';
 import { error } from 'util';
 
 @Component({
-    selector:'pm-products',
+    // selector:'pm-products', ne treba nam vise jer imamo rutiranje
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css']//ubacimo kao u style headeru u MVC viewu
 })
